@@ -11,14 +11,14 @@ import xssFilters from "xss-filters";
  
 export default function PostCard({ post }) {
     
-        const {postId, title, author, description, image, video, date, votes, commentCount, permalink} = post;
+        const { title, author, description, image, video, date, votes, commentCount, permalink} = post;
 
         const commentDisplay = displayCount(commentCount);
 
         let media;
         
         if(image){
-            media = <img className="post-card-media" src={image}/>;
+            media = <img alt="" className="post-card-media" src={image}/>;
         }else if(video) {
             media = <video className="post-card-media" src={video} controls></video>;
         }else{
@@ -38,7 +38,7 @@ export default function PostCard({ post }) {
                 </div>
                 <div className="meta-card">
                     <div className="meta-card-name">
-                        <span><a href="#">{author}</a></span>
+                        <span class="author">{author}</span>
                     </div>
                     <div className="meta-card-time">
                         <span><TimePosted date={date*1000}/></span>

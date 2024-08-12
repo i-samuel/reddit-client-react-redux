@@ -3,7 +3,7 @@ import TimePosted from '../TimePosted/TimePosted';
 import './comment.css';
 
 export default function Comment({ author, comment, date }){
-    if(!date || !comment || !author || comment == '[deleted]' || comment == '[removed]') return '';
+    if(!date || !comment || !author || comment === '[deleted]' || comment === '[removed]') return '';
     
     return(
         <li className="comment">

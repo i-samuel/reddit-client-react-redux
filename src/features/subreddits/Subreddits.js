@@ -4,13 +4,13 @@ import { loadSubreddits, selectAllSubreddits, isLoadingSubreddits } from "./subr
 import { loadPosts } from "../postsList/postsListSlice";
 import SubredditButton from "../../components/SubredditButton/SubredditButton";
 import "./subreddits.css";
-import { useNavigate } from "react-router-dom";
+
 
 export default function Subreddits() {
     const dispatch = useDispatch();
     const subreddits = useSelector(selectAllSubreddits);
     const isLoadingSubs = useSelector(isLoadingSubreddits);
-    const navigate = useNavigate();
+    
 
     useEffect(() => {
         dispatch(loadSubreddits());
