@@ -1,0 +1,73 @@
+main {
+    display: flex; 
+    padding: 0 10% 20px;
+    
+  }  
+  
+  .archive {
+    width: 70%; 
+    padding-right: 25px;
+  }
+  
+  .sidebar {
+    width: 30%;
+    padding-left: 25px; 
+  }
+
+
+@media only screen and (max-width: 1096px) {
+    main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media only screen and (max-width: 968px) {
+    main {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .archive {
+        padding-right: 15px;
+      }
+
+      .sidebar {
+        padding-left: 15px; 
+      }
+}
+
+@media only screen and (max-width: 900px) {
+    main {
+        display: block;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .archive {
+        width: 100%;
+        padding-right: 0;
+      }
+
+    .sidebar{
+        width: 100%;
+        padding-left: 0; 
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    main {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+
+
+
+@media only screen and (max-width: 456px) {
+  main {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}

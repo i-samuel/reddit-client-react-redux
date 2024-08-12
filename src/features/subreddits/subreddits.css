@@ -1,0 +1,9 @@
+li {
+    list-style: none;
+}
+
+.subreddit-list {
+   background-color: #fff;
+   padding: 15px;
+   margin-top: 30px;
+}

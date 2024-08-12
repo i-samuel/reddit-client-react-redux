@@ -1,0 +1,48 @@
+.search-bar form {
+  direction: rtl;
+}
+
+.search-bar form input {      
+    width: 50%;
+    height: 35px;
+    text-align: center;   
+    border: none;
+    background-color: rgba(0,0,0,0.05);
+  }
+
+.search-bar button {
+  
+  height: 35px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: rgb(61, 50, 218);
+  color: white;
+  padding: auto 35px;
+  border-style: none;   
+}
+
+.search-bar button:hover {    
+    background-color: #1e1e1e;    
+  }
+  
+@media only screen and (max-width: 564px) {
+  .search-bar form{
+    width: 100%;
+  }
+
+  .search-bar input {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 456px) {
+    
+  .search-bar form {
+    height: auto;
+  }
+
+
+    
+   
+   
+}
