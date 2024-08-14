@@ -1,6 +1,6 @@
 # Reddit Client
 
-REDDIT cLIENT is a Codecademy Portfolio Project implemented using React, Redux & Reddit JSON API.
+Reddit Client is a Codecademy Portfolio Project implemented using React, Redux & Reddit JSON API.
 
 ## Project Objectives:
 
