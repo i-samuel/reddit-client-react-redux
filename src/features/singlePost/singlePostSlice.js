@@ -4,7 +4,7 @@ export const loadPostData = createAsyncThunk(
     'singlePost/loadPoostData',
     async({ postId }) => {
         try{
-            let endpoint = `https://www.reddit.com/${postId}.json`;
+            let endpoint = `https://www.reddit.com/comments/${postId}.json`;
             const response = await fetch(endpoint);
             
             if(response.ok) {
@@ -21,7 +21,7 @@ export const loadPostData = createAsyncThunk(
     }
 )
 
-export const singlePostSlice = createSlice(({
+export const singlePostSlice = createSlice({
     name: 'singlePost',
     initialState: {
         post: {},
@@ -79,7 +79,7 @@ export const singlePostSlice = createSlice(({
             })
     }
 
-}))
+})
 
 export const isLoadingPostData = (state) => state.singlePost.isLoadingPost;
 

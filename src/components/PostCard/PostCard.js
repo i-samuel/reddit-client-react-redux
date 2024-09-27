@@ -8,6 +8,7 @@ import { faComment } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 import validator from "validator";
 import xssFilters from "xss-filters";
+
  
 export default function PostCard({ post }) {
     
@@ -38,7 +39,7 @@ export default function PostCard({ post }) {
                 </div>
                 <div className="meta-card">
                     <div className="meta-card-name">
-                        <span class="author">{author}</span>
+                        <span className="author"><a href="">{author}</a></span>
                     </div>
                     <div className="meta-card-time">
                         <span><TimePosted date={date*1000}/></span>

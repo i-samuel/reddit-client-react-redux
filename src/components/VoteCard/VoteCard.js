@@ -15,6 +15,9 @@ export default function VoteCard({ count }) {
         if(vote === 'up') {            
             setvCount(c => c-1);
             setVote(null);
+        } else if (vote === 'down'){
+            setvCount(c => c+2);
+            setVote('up');
         } else {            
             setvCount(c => c+1);
             setVote('up');
@@ -26,6 +29,9 @@ export default function VoteCard({ count }) {
         if(vote === 'down') {            
             setvCount(c => c+1);
             setVote(null);
+        } else if (vote === 'up'){
+            setvCount(c => c-2);
+            setVote('down');
         } else {            
             setvCount(c => c-1);
             setVote('down');

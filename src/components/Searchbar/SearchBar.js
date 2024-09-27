@@ -29,7 +29,7 @@ export default function SearchBar() {
     return(
         <div className="search-bar">
             <form onSubmit={handleSearchSubmit}>
-            <button type="submit" className="search-button"><FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#ffffff",}} /></button>
+                <button type="submit" className="search-button"><FontAwesomeIcon icon={faMagnifyingGlass} style={{color: "#ffffff",}} /></button>
                 <input type="text" name="search" placeholder="Search" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
                 
             </form>

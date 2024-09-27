@@ -26,9 +26,11 @@ export default function SinglePost() {
     } else if( status === 'success') {
         return(
             <div className="single-post">
-                <PostCard 
-                    post={postForId}
-                />
+        
+                    <PostCard 
+                        post={postForId}
+                    />
+               
                 {postForId.comments.map((item) => 
                     <Comment
                         key={item.id}

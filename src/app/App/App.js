@@ -5,7 +5,6 @@ import Subreddit from '../../features/subreddits/Subreddit';
 import SearchResults from '../../components/SearchResults/SearchResults';
 import SinglePost from '../../features/singlePost/SinglePost';
 
-
 function App() {
   
   const router = createBrowserRouter(createRoutesFromElements([
